@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Slot Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>GreenBet Slots</h1>
+    <div class="balance">
+        Balance: <span id="balance">100</span> credits
+    </div>
+    <div class="slot-machine">
+        <div id="reel1" class="reel">🍒</div>
+        <div id="reel2" class="reel">🍋</div>
+        <div id="reel3" class="reel">🍊</div>
+    </div>
+    <button id="spin-button">Spin</button>
+
+    <!-- Custom popup for win notification -->
+    <div id="win-popup" class="popup">
+        <p>You won!</p>
+        <button id="close-popup">OK</button>
+    </div>
+
+    <!-- Sound effects -->
+    <audio id="spin-sound" src="spin.mp3" preload="auto"></audio>
+    <audio id="win-sound" src="win.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
